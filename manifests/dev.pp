@@ -11,7 +11,7 @@ class filipebarcos::dev {
       'spark',
       'libxml2',
       'the_silver_searcher',
-      'ctags-exuberant'
+      'ctags-exuberant',
       'wget'
     ]:
     ensure => present
