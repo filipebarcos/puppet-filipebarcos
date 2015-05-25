@@ -1,10 +1,12 @@
-# Dotfiles for sergiobuj
+# Dotfiles for filipebarcos
 
-class sergiobuj::dotfiles {
-  notice('Setting up dotfiles for sergiobuj')
+class filipebarcos::dotfiles {
+  notice('Setting up dotfiles for filipebarcos')
+
+  include zsh
 
   $home     = "/Users/${::boxen_user}"
-  $src      = "${home}/src"
+  $src      = "${home}/workspace"
   $dotfiles = "${src}/dotfiles"
 
   file { $dotfiles:
@@ -12,12 +14,17 @@ class sergiobuj::dotfiles {
   }
 
   repository { $dotfiles:
-    source  => 'sergiobuj/dotfiles',
+    source  => 'filipebarcos/dotfiles',
     require => File[$dotfiles]
   }
 
-  exec { 'installing dotfiles':
-    command => 'sh install.sh',
+  exec { 'install osx preferences':
+    command => 'sh script/install',
+    cwd     => $dotfiles
+  }
+
+  exec { 'bootstraping dotfiles':
+    command => 'sh script/bootstrap',
     cwd     => $dotfiles
   }
 

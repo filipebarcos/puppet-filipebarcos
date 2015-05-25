@@ -1,10 +1,11 @@
-# Include everything for sergiobuj
+# Include everything for filipebarcos
 
-class sergiobuj::all {
-  notice('Setting up sergiobuj')
+class filipebarcos::all {
+  notice('Setting up filipebarcos')
 
-  include sergiobuj::applications
-  include sergiobuj::dotfiles
-  include sergiobuj::preferences
+  include filipebarcos::apps
+  include filipebarcos::dev
+  include filipebarcos::dotfiles
+  include filipebarcos::preferences
 
 }
