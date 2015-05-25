@@ -19,6 +19,6 @@ class filipebarcos::apps {
       'vlc',
     ]:
     provider => 'brewcask',
-    intall_options => ["--appdir=/Applications"]
+    install_options => ["--appdir=/Applications"]
   }
 }
