@@ -4,7 +4,7 @@ class filipebarcos::preferences {
   include sourcecodepro
   include osx::keyboard::capslock_to_control
 
-  exec { 'creating tmp folder'
+  exec { 'creating tmp folder':
     command => 'mkdir tmp',
     cwd     => "/Users/${::boxen_user}"
   }
