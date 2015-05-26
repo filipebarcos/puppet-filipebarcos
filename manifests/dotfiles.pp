@@ -18,12 +18,12 @@ class filipebarcos::dotfiles {
   }
 
   exec { 'install osx preferences':
-    command => 'sh script/install',
+    command => './script/install',
     cwd     => $dotfiles
   }
 
   exec { 'bootstraping dotfiles':
-    command => 'sh script/bootstrap',
+    command => './script/bootstrap',
     cwd     => $dotfiles
   }
 
