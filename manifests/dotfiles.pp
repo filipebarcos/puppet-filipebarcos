@@ -6,7 +6,7 @@ class filipebarcos::dotfiles {
   include zsh
 
   $home     = "/Users/${::boxen_user}"
-  $dotfiles = "${src}/.dotfiles"
+  $dotfiles = "${home}/.dotfiles"
 
   file { $dotfiles:
     ensure => directory
