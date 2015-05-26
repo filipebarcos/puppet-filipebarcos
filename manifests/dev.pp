@@ -16,4 +16,10 @@ class filipebarcos::dev {
     ]:
     ensure => present
   }
+
+  $home     = "/Users/${::boxen_user}"
+
+  file { "${home}/tmp":
+    ensure => directory
+  }
 }
