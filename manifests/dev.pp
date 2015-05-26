@@ -12,7 +12,8 @@ class filipebarcos::dev {
       'libxml2',
       'the_silver_searcher',
       'ctags-exuberant',
-      'wget'
+      'wget',
+      'hub'
     ]:
     ensure => present
   }
