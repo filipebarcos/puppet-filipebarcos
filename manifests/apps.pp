@@ -5,7 +5,7 @@ class filipebarcos::apps {
 
   # Brew Cask
   package {
-    [ 
+    [
       'caffeine',
       'firefox',
       'flux',
@@ -13,7 +13,6 @@ class filipebarcos::apps {
       'iterm2',
       'twitter',
       'spotify',
-      'airmail-amt',
       'spectacle',
       'clipmenu',
       'vlc',
