@@ -17,13 +17,8 @@ class filipebarcos::dotfiles {
     require => File[$dotfiles]
   }
 
-  exec { 'install osx preferences':
-    command => './script/install',
-    cwd     => $dotfiles
-  }
-
-  exec { 'bootstraping dotfiles':
-    command => './script/bootstrap',
+  exec { 'installing dotfiles':
+    command => './script/boxen_install',
     cwd     => $dotfiles
   }
 
