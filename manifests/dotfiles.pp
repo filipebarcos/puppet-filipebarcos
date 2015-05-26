@@ -18,7 +18,7 @@ class filipebarcos::dotfiles {
   }
 
   exec { 'installing dotfiles':
-    command => './script/boxen_install',
+    command => 'sh script/boxen_install',
     cwd     => $dotfiles
   }
 
