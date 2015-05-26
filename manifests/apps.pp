@@ -15,6 +15,7 @@ class filipebarcos::apps {
       'spectacle',
       'clipmenu',
       'vlc',
+      'appcleaner'
     ]:
     provider => 'brewcask',
     install_options => ["--appdir=/Applications"]
