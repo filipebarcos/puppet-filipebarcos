@@ -17,12 +17,13 @@ class filipebarcos::dotfiles {
     require => File[$dotfiles]
   }
 
-  exec { 'installing dotfiles':
-    command => 'sh script/boxen_install',
-    cwd     => $dotfiles
+  exec { 'installing-dotfiles':
+    command => 'sh -c "script/boxen_install"',
+    cwd     => $dotfiles,
+    require => Exec['pull-dotfiles-master']
   }
 
-  exec { 'pull dotfiles master':
+  exec { 'pull-dotfiles-master':
     command => 'git pull origin master',
     cwd     => $dotfiles
   }
