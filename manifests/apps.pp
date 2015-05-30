@@ -6,16 +6,17 @@ class filipebarcos::apps {
   # Brew Cask
   package {
     [
+      'appcleaner',
       'caffeine',
+      'clipmenu',
       'firefox',
       'flux',
       'google-chrome',
       'iterm2',
-      'spotify',
       'spectacle',
-      'clipmenu',
-      'vlc',
-      'appcleaner'
+      'spotify',
+      'telegram',
+      'vlc'
     ]:
     provider => 'brewcask',
     install_options => ["--appdir=/Applications"]
