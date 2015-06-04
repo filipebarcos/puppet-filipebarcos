@@ -9,6 +9,7 @@ class filipebarcos::apps {
       'appcleaner',
       'caffeine',
       'clipmenu',
+      'evernote',
       'firefox',
       'flux',
       'google-chrome',
