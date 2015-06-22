@@ -4,7 +4,6 @@ class filipebarcos::preferences {
   include sourcecodepro
 
   include osx::global::disable_key_press_and_hold
-  include osx::global::key_repeat_rate
   include osx::global::enable_keyboard_control_access
   include osx::global::expand_save_dialog
   include osx::global::expand_print_dialog
@@ -26,8 +25,12 @@ class filipebarcos::preferences {
     enabled => false
   }
 
+  class { 'osx::global::key_repeat_rate':
+    rate => 0
+  }
+
   class { 'osx::global::key_repeat_delay':
-    delay => 0
+    delay => 8
   }
 
   class { 'osx::dock::position':
