@@ -26,11 +26,11 @@ class filipebarcos::preferences {
   }
 
   class { 'osx::global::key_repeat_rate':
-    rate => 0
+    rate => 1
   }
 
   class { 'osx::global::key_repeat_delay':
-    delay => 8
+    delay => 13
   }
 
   class { 'osx::dock::position':

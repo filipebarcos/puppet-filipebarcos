@@ -7,13 +7,17 @@ class filipebarcos::apps {
   package {
     [
       'appcleaner',
+      'atom',
       'caffeine',
       'clipmenu',
+      'cloudup',
+      'dash',
       'evernote',
       'firefox',
       'flux',
       'google-chrome',
       'iterm2',
+      'screenhero',
       'spectacle',
       'spotify',
       'telegram',
