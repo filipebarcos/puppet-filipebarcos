@@ -7,7 +7,6 @@ class filipebarcos::apps {
   package {
     [
       'appcleaner',
-      'atom',
       'caffeine',
       'clipmenu',
       'cloudup',
