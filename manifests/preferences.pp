@@ -34,6 +34,6 @@ class filipebarcos::preferences {
   }
 
   class { 'osx::dock::position':
-    position => 'left'
+    position => 'right'
   }
 }
