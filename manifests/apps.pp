@@ -20,8 +20,7 @@ class filipebarcos::apps {
       'spectacle',
       'spotify',
       'telegram',
-      'vlc',
-      'whiskey'
+      'vlc'
     ]:
     provider => 'brewcask',
     install_options => ["--appdir=/Applications"]
