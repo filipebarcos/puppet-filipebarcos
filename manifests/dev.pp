@@ -3,6 +3,7 @@ class filipebarcos::dev {
 
   package {
     [
+      'vim',
       'tmux',
       'reattach-to-user-namespace',
       'tig',
