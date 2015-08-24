@@ -14,7 +14,8 @@ class filipebarcos::dev {
       'the_silver_searcher',
       'ctags-exuberant',
       'wget',
-      'hub'
+      'hub',
+      'httpie'
     ]:
     ensure => present
   }
