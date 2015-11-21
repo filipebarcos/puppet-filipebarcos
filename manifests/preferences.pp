@@ -1,7 +1,6 @@
 # Preferences for filipebarcos
 class filipebarcos::preferences {
   notice('Setting up osx preferences for filipebarcos')
-  include sourcecodepro
 
   include osx::global::disable_key_press_and_hold
   include osx::global::enable_keyboard_control_access
