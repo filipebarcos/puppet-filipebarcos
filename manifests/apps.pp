@@ -21,7 +21,6 @@ class filipebarcos::apps {
       'iterm2',
       'omnigraffle',
       'screenhero',
-      'skype',
       'spectacle',
       'spotify',
       'telegram',
