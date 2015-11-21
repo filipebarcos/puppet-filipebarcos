@@ -11,6 +11,7 @@ class filipebarcos::apps {
       'clipmenu',
       'cloudup',
       'dash',
+      'dropbox',
       'evernote',
       'firefox',
       'flux',
