@@ -6,7 +6,9 @@ class filipebarcos::apps {
   # Brew Cask
   package {
     [
+      '1password',
       'appcleaner',
+      'atom',
       'caffeine',
       'clipmenu',
       'cloudup',
@@ -17,10 +19,13 @@ class filipebarcos::apps {
       'flux',
       'google-chrome',
       'iterm2',
+      'omnigraffle',
       'screenhero',
+      'skype',
       'spectacle',
       'spotify',
       'telegram',
+      'the-unarchiver',
       'vlc'
     ]:
     provider => 'brewcask',
