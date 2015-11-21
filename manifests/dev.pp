@@ -1,6 +1,7 @@
 class filipebarcos::dev {
   notice("Setting up dev stuff for ${::boxen_user}")
 
+  include fonts::adobe::sourcecodepro
   package {
     [
       'vim',
