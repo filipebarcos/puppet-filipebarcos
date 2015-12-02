@@ -7,10 +7,10 @@ class filipebarcos::apps {
   package {
     [
       '1password',
+      'alfred',
       'appcleaner',
       'atom',
       'caffeine',
-      'clipmenu',
       'cloudup',
       'dash',
       'evernote',
