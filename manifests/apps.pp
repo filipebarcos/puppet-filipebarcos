@@ -7,11 +7,9 @@ class filipebarcos::apps {
   package {
     [
       '1password',
-      'alfred',
       'appcleaner',
       'atom',
       'caffeine',
-      'cloudup',
       'dash',
       'evernote',
       'firefox',
@@ -29,4 +27,6 @@ class filipebarcos::apps {
     provider => 'brewcask',
     install_options => ["--appdir=/Applications"]
   }
+
+  include alfred
 }
